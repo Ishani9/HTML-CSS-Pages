@@ -1,1 +1,126 @@
-<! Learning Problem - Web Page Layout done in class >
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/fav.png"> <!--Favicons-->
+    <title>CodePen: Demo FlexBox</title>
+    <style>
+        html{
+            font-size: 14px;
+        }
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarRightItem {
+            background: hotpink;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+
+        .mainContentItem {
+            flex: 4 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mainContentitem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>Header - Sample Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentitem">
+            <article>
+                <h2>First article</h2>
+                <p>First line of the first article.</p>
+                <p>Second line of the first article. This line can be long then.. lets see what happens.. even more long</p>
+                <p>Third line of the first article.</p>
+            </article>
+            <article>
+                <h2>Second Article: The Second Article</h2>
+                <p>First line of the Second article.</p>
+                <p>Second line of the Second article.</p>
+            </article>
+            <article>
+                <h2>Third Article: </h2>
+                <p>First line of the Third article.</p>
+                <p>Second line of the Third article.</p>
+                <p>Third line of the Third article.</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+                <p>You can write left side bar items here</p>
+            </div>
+        </sidebar>
+        <sidebar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+                <p>You can write right side bar items here</p>
+            </div>
+        </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
+
+
+
