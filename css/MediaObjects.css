@@ -1,0 +1,42 @@
+/*Media object - nested */
+
+ body {
+    background-color: lavenderblush;
+    }
+ .media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 24em;
+    margin: 10px;
+    border: 5px solid gold;
+    box-shadow: 2px 2px 2px 1px red;
+  } 
+  .media-object {
+    margin-right: 1em;
+  }
+  .media-body {
+    flex: 10;
+  }
+  .media .text {
+    padding: 0 20px 20px;
+    font-size: 50px;
+  }
+  .media-heading {
+    margin: 0 0 0.5em;
+  }
+  h1{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    align-content: center;
+  }
+  p, li{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    align-content: center;
+  }
