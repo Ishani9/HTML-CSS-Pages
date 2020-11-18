@@ -1,1 +1,55 @@
-/* THIS IS A CSS FILE */
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  h2 {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(5, 114, 5, 0.959);
+    background-color: rgb(230, 241, 64);
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+    padding: 1em;
+    font-size: 30px;
+    align-content: center;
+  }
+  nav, aside {
+    padding: 1em;
+    font-size: 15px;
+  }
+  article{
+    padding: 0.5em;
+    font-size: 20px;
+  }
